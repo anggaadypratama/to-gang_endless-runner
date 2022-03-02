@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,7 +11,7 @@ public class TilesManager : MonoBehaviour
 
     float spawnZ = 0f;
 
-    int amnTilesOnScreen = 3;
+    public int amnTilesOnScreen = 3;
     int lastPrefabsIndex = 0;
     List<GameObject> activeTiles = new List<GameObject>();
 
@@ -71,7 +70,5 @@ public class TilesManager : MonoBehaviour
 
         lastPrefabsIndex = randomIndex;
         return randomIndex;
-
-
     }
 }

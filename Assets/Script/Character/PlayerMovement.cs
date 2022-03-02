@@ -1,57 +1,80 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
     CharacterController controller;
-    Vector3 moveVector;
-    float gravity = 12.0f;
-
+    Vector3 moveVector = Vector3.zero;
+    float gravity = 1f;
     float speed = 5.0f;
     float verticalVelocity = 0f;
     float animationDuration = 3f;
+    float jumpHeight = 1f;
+    float gravityValue = -9.81f;
+    bool isDeath = false;
 
-    // Start is called before the first frame update
     void Start()
     {
         controller = GetComponent<CharacterController>();
     }
 
-    // Update is called once per frame
     void Update()
     {
+        bool isGrounded = controller.isGrounded;
 
-        if (Time.time < animationDuration)
+        if (isDeath) return;
+
+        if (isMove())
         {
             controller.Move(Vector3.forward * speed * Time.deltaTime);
             return;
         }
         else
         {
-            moveVector = Vector3.zero;
-
-            if (controller.isGrounded)
+            if (isGrounded)
             {
-                // Debug.Log("is grounded");
-                verticalVelocity = -gravity * 0.1f;
+                verticalVelocity = -0.5f;
             }
             else
             {
-                // Debug.Log("is Not grounded");
                 verticalVelocity -= gravity * Time.deltaTime;
             }
 
-            // not readable
+            if (Input.GetButton("Jump") && isGrounded)
+            {
+                verticalVelocity = Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
+            }
+            else
+            {
+                verticalVelocity += gravityValue * Time.deltaTime;
+            }
+
             moveVector.x = Input.GetAxisRaw("Horizontal") * speed;
             moveVector.y = verticalVelocity;
             moveVector.z = speed;
 
-            // Debug.Log(moveVector.x);
-
-            controller.Move(Vector3.forward * Time.deltaTime * speed);
+            controller.Move(moveVector * Time.deltaTime * speed);
         }
+    }
 
+    public void setSpeed(float modifier)
+    {
+        speed = 5f + modifier;
+    }
 
+    public bool isMove() => Time.time < animationDuration;
+
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        if (hit.point.z > transform.position.z + controller.radius)
+        {
+            Death();
+        }
+    }
+
+    void Death()
+    {
+        isDeath = true;
+        GetComponent<Score>().OnDeath();
     }
 }
