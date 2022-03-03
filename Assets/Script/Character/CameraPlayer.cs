@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class CameraPlayer : MonoBehaviour
@@ -18,13 +17,12 @@ public class CameraPlayer : MonoBehaviour
     {
         lookAt = GameObject.FindGameObjectWithTag("Player").transform;
         startOffset = transform.position - lookAt.position;
+        Debug.Log(startOffset);
     }
 
     // Update is called once per frame
     void Update()
     {
-
-
         moveVector = lookAt.position + startOffset;
         moveVector.x = 0;
         moveVector.y = Mathf.Clamp(moveVector.y, 3, 5);
