@@ -26,7 +26,9 @@ public class PlayerMovement : MonoBehaviour
 
         if (isMove())
         {
-            controller.Move(Vector3.forward * speed * Time.deltaTime);
+            moveVector.y = -0.5f;
+            moveVector.z = speed;
+            controller.Move(moveVector * speed * Time.deltaTime);
             return;
         }
         else
@@ -66,10 +68,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        if (hit.point.z > transform.position.z + controller.radius)
-        {
-            Death();
-        }
+        if (hit.gameObject.tag == "Enemy") Death();
     }
 
     void Death()

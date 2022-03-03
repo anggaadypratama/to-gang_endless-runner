@@ -6,7 +6,7 @@ public class TilesManager : MonoBehaviour
     Transform playerTransform;
     public GameObject[] titlePrefabs;
     public float tileLength = 12f;
-    float safeZone = 15f;
+    float safeZone = 30f;
 
 
     float spawnZ = 0f;
