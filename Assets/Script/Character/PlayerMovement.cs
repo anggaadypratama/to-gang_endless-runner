@@ -3,10 +3,6 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-
-
-    bool canMove = false;
-    Vector3 horizontalMovement;
     CharacterController controller;
     Vector3 moveVector = Vector3.zero;
     float gravity = 1f;
@@ -37,24 +33,8 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            if (isGrounded)
-            {
-                verticalVelocity = -0.5f;
-            }
-            else
-            {
-                verticalVelocity -= gravity * Time.deltaTime;
-            }
-
-            if (Input.GetButton("Jump") && isGrounded)
-            {
-                verticalVelocity = Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
-            }
-            else
-            {
-                verticalVelocity += gravityValue * Time.deltaTime;
-            }
-
+            grounded(isGrounded);
+            jump(isGrounded);
 
 
 
@@ -63,10 +43,33 @@ public class PlayerMovement : MonoBehaviour
             moveVector.y = verticalVelocity;
             moveVector.z = speed;
 
-
-
-
             controller.Move(moveVector * Time.deltaTime * speed);
+        }
+    }
+
+
+    void jump(bool isGrounded)
+    {
+
+        if (Input.GetButton("Jump") && isGrounded)
+        {
+            verticalVelocity = Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
+        }
+        else
+        {
+            verticalVelocity += gravityValue * Time.deltaTime;
+        }
+    }
+
+    void grounded(bool isGrounded)
+    {
+        if (isGrounded)
+        {
+            verticalVelocity = -0.5f;
+        }
+        else
+        {
+            verticalVelocity -= gravity * Time.deltaTime;
         }
     }
 
