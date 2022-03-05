@@ -3,6 +3,10 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+
+
+    bool canMove = false;
+    Vector3 horizontalMovement;
     CharacterController controller;
     Vector3 moveVector = Vector3.zero;
     float gravity = 1f;
@@ -51,9 +55,16 @@ public class PlayerMovement : MonoBehaviour
                 verticalVelocity += gravityValue * Time.deltaTime;
             }
 
+
+
+
+
             moveVector.x = Input.GetAxisRaw("Horizontal") * speed;
             moveVector.y = verticalVelocity;
             moveVector.z = speed;
+
+
+
 
             controller.Move(moveVector * Time.deltaTime * speed);
         }
