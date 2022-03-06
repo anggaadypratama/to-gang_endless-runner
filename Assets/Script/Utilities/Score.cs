@@ -7,14 +7,15 @@ public class Score : MonoBehaviour
 {
     float score = 0f;
     int difficultLevel = 1;
+    float speedLevel = 0f;
     int maxDifficultLevel = 10;
-    int scoreToNextLevel = 10;
+    float scoreToNextLevel = 10f;
     public TextMeshProUGUI scoreText;
 
     bool isDeath = false;
 
 
-    // Update is called once per frame
+
     void Update()
     {
 
@@ -41,10 +42,11 @@ public class Score : MonoBehaviour
     {
         if (difficultLevel == maxDifficultLevel) return;
 
-        scoreToNextLevel *= 2;
+        scoreToNextLevel *= 2f;
         difficultLevel++;
+        speedLevel += 0.5f;
 
-        GetComponent<PlayerMovement>().setSpeed((float)difficultLevel);
+        GetComponent<PlayerMovement>().setSpeed(speedLevel);
     }
 
     public void OnDeath()

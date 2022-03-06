@@ -6,10 +6,10 @@ public class PlayerMovement : MonoBehaviour
     CharacterController controller;
     Vector3 moveVector = Vector3.zero;
     float gravity = 1f;
-    float speed = 5.0f;
+    float speed = 4.0f;
     float verticalVelocity = 0f;
     float animationDuration = 3f;
-    float jumpHeight = 1f;
+    float jumpHeight = .4f;
     float gravityValue = -9.81f;
     bool isDeath = false;
 
@@ -36,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
             grounded(isGrounded);
             jump(isGrounded);
 
-            moveVector.x = Input.GetAxisRaw("Horizontal") * speed;
+            moveVector.x = Input.GetAxisRaw("Horizontal") * 2;
             moveVector.y = verticalVelocity;
             moveVector.z = speed;
 
@@ -72,7 +72,8 @@ public class PlayerMovement : MonoBehaviour
 
     public void setSpeed(float modifier)
     {
-        speed = 5f + modifier;
+        Debug.Log(speed);
+        speed = 4f + modifier;
     }
 
     public bool isMove() => Time.time < animationDuration;
