@@ -17,11 +17,24 @@ public class Score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        bool isMove = GetComponent<PlayerMovement>().isMove();
         if (isDeath) return;
         if (score >= scoreToNextLevel) LevelUp();
 
-        score += GetComponent<PlayerMovement>().isMove() ? 0 : Time.deltaTime * difficultLevel;
-        scoreText.text = $"{(int)score}";
+        score += isMove ? 0 : Time.deltaTime * difficultLevel;
+        if (isMove)
+        {
+            scoreText.gameObject.SetActive(false);
+
+        }
+        else
+        {
+            scoreText.gameObject.SetActive(true);
+
+        }
+
+        scoreText.text = $"{(int)score}m";
     }
 
     void LevelUp()
