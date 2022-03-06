@@ -36,9 +36,6 @@ public class PlayerMovement : MonoBehaviour
             grounded(isGrounded);
             jump(isGrounded);
 
-
-
-
             moveVector.x = Input.GetAxisRaw("Horizontal") * speed;
             moveVector.y = verticalVelocity;
             moveVector.z = speed;
