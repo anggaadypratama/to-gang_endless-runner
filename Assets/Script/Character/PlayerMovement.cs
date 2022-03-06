@@ -80,6 +80,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
+        Debug.Log("HITTING");
         if (hit.gameObject.tag == "Enemy") Death();
     }
 
