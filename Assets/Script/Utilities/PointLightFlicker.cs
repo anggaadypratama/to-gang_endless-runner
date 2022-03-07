@@ -9,10 +9,7 @@ public class PointLightFlicker : MonoBehaviour
 
     void Update()
     {
-        if (isFlickering == false)
-        {
-            StartCoroutine(FlickeringLight());
-        }
+        if (!isFlickering) StartCoroutine(FlickeringLight());
     }
 
     IEnumerator FlickeringLight()

@@ -8,6 +8,8 @@ public class TilesManager : MonoBehaviour
     public float tileLength = 12f;
     float safeZone = 30f;
 
+    int difficultRange = 0;
+
     static int difficultLevel = 1;
 
     float spawnZ = 0f;
@@ -30,6 +32,9 @@ public class TilesManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        // difficultRange = titlePrefabs.Length > difficultLevel ? difficultLevel : titlePrefabs.Length;
+
         if (playerTransform.position.z - safeZone > (spawnZ - amnTilesOnScreen * tileLength))
         {
             SpawnTile();
@@ -67,16 +72,17 @@ public class TilesManager : MonoBehaviour
         {
             return 0;
         }
-
-        int randomIndex = lastPrefabsIndex;
-        int difficultRange = titlePrefabs.Length > difficultLevel ? difficultLevel : titlePrefabs.Length;
-        Debug.Log(difficultRange);
-        while (randomIndex == lastPrefabsIndex)
+        else
         {
-            randomIndex = Random.Range(0, titlePrefabs.Length);
-        }
+            int randomIndex = lastPrefabsIndex;
 
-        lastPrefabsIndex = randomIndex;
-        return randomIndex;
+            while (randomIndex == lastPrefabsIndex)
+            {
+                randomIndex = Random.Range(0, titlePrefabs.Length);
+            }
+
+            lastPrefabsIndex = randomIndex;
+            return randomIndex;
+        }
     }
 }
