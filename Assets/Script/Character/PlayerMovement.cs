@@ -72,7 +72,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void setSpeed(float modifier)
     {
-        Debug.Log(speed);
+
         speed = 4f + modifier;
     }
 
@@ -80,7 +80,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        Debug.Log("HITTING");
+
         if (hit.gameObject.tag == "Enemy") Death();
     }
 

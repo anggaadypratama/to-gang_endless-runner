@@ -47,6 +47,7 @@ public class Score : MonoBehaviour
         speedLevel += 0.5f;
 
         GetComponent<PlayerMovement>().setSpeed(speedLevel);
+        TilesManager.setDifficult(difficultLevel);
     }
 
     public void OnDeath()

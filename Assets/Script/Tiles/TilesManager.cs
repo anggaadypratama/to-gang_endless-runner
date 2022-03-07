@@ -8,6 +8,7 @@ public class TilesManager : MonoBehaviour
     public float tileLength = 12f;
     float safeZone = 30f;
 
+    static int difficultLevel = 1;
 
     float spawnZ = 0f;
 
@@ -55,6 +56,11 @@ public class TilesManager : MonoBehaviour
         activeTiles.RemoveAt(0);
     }
 
+    public static void setDifficult(int level)
+    {
+        difficultLevel = level;
+    }
+
     private int RandomPrefabIndex()
     {
         if (titlePrefabs.Length <= 1)
@@ -63,6 +69,8 @@ public class TilesManager : MonoBehaviour
         }
 
         int randomIndex = lastPrefabsIndex;
+        int difficultRange = titlePrefabs.Length > difficultLevel ? difficultLevel : titlePrefabs.Length;
+        Debug.Log(difficultRange);
         while (randomIndex == lastPrefabsIndex)
         {
             randomIndex = Random.Range(0, titlePrefabs.Length);
