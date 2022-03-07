@@ -1,3 +1,4 @@
+using System.Collections;
 
 using UnityEngine;
 
@@ -5,24 +6,36 @@ public class PlayerMovement : MonoBehaviour
 {
     CharacterController controller;
     Vector3 moveVector = Vector3.zero;
+    Quaternion originalRotation;
+
+    float minimumVert = -5f, maxVert = 5f;
+    float rotating;
+
     float gravity = 1f;
-    float speed = 4.0f;
+    float speed = 3.0f;
     float verticalVelocity = 0f;
+    Animator animator;
     float animationDuration = 3f;
-    float jumpHeight = .4f;
+    float jumpHeight = .2f;
     float gravityValue = -9.81f;
     bool isDeath = false;
 
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        animator = GetComponent<Animator>();
+        originalRotation = transform.rotation;
     }
 
     void Update()
     {
         bool isGrounded = controller.isGrounded;
 
-        if (isDeath) return;
+        if (isDeath)
+        {
+
+            return;
+        }
 
         if (isMove())
         {
@@ -36,7 +49,28 @@ public class PlayerMovement : MonoBehaviour
             grounded(isGrounded);
             jump(isGrounded);
 
-            moveVector.x = Input.GetAxisRaw("Horizontal") * 2;
+            float horizontalMovement = Input.GetAxisRaw("Horizontal");
+
+
+            if (horizontalMovement != 0)
+            {
+                if (horizontalMovement < 0 && transform.rotation.y >= -45f)
+                {
+                    transform.Rotate(0.0f, -2f, 0.0f, Space.Self);
+                }
+
+                if (horizontalMovement > 0 && transform.rotation.y <= 45f)
+                {
+                    transform.Rotate(0.0f, 2f, 0.0f, Space.Self);
+
+                }
+            }
+            else
+            {
+                transform.rotation = Quaternion.Slerp(transform.rotation, originalRotation, Time.time * 10);
+            }
+
+            moveVector.x = horizontalMovement * 2;
             moveVector.y = verticalVelocity;
             moveVector.z = speed;
 
@@ -44,18 +78,20 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-
     void jump(bool isGrounded)
     {
 
         if (Input.GetButton("Jump") && isGrounded)
         {
+            animator.SetBool("isJump", true);
             verticalVelocity = Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
         }
         else
         {
+            animator.SetBool("isJump", false);
             verticalVelocity += gravityValue * Time.deltaTime;
         }
+
     }
 
     void grounded(bool isGrounded)
@@ -72,8 +108,8 @@ public class PlayerMovement : MonoBehaviour
 
     public void setSpeed(float modifier)
     {
-
-        speed = 4f + modifier;
+        animator.speed = .8f + (modifier * 1.2f);
+        speed = 3f + modifier;
     }
 
     public bool isMove() => Time.time < animationDuration;
@@ -81,11 +117,16 @@ public class PlayerMovement : MonoBehaviour
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
 
-        if (hit.gameObject.tag == "Enemy") Death();
+        if (hit.gameObject.tag == "Enemy")
+        {
+            Debug.Log("Enemy hitted");
+            Death();
+        }
     }
 
     void Death()
     {
+        animator.enabled = false;
         isDeath = true;
         GetComponent<Score>().OnDeath();
     }
