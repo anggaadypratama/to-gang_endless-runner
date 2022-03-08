@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     float animationDuration = 3f;
     float jumpHeight = .2f;
     float gravityValue = -9.81f;
+    float startTime;
     bool isDeath = false;
 
     void Start()
@@ -22,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
         controller = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
         originalRotation = transform.rotation;
+        startTime = Time.time;
     }
 
     void Update()
@@ -109,7 +111,7 @@ public class PlayerMovement : MonoBehaviour
         speed = 3f + modifier;
     }
 
-    public bool isMove() => Time.time < animationDuration;
+    public bool isMove() => Time.time - startTime < animationDuration;
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
