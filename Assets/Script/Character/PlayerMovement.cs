@@ -1,4 +1,4 @@
-using System.Collections;
+
 
 using UnityEngine;
 
@@ -7,9 +7,6 @@ public class PlayerMovement : MonoBehaviour
     CharacterController controller;
     Vector3 moveVector = Vector3.zero;
     Quaternion originalRotation;
-
-    float minimumVert = -5f, maxVert = 5f;
-    float rotating;
 
     float gravity = 1f;
     float speed = 3.0f;
