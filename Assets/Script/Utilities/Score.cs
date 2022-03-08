@@ -44,7 +44,7 @@ public class Score : MonoBehaviour
 
         scoreToNextLevel *= 2f;
         difficultLevel++;
-        speedLevel += 0.5f;
+        speedLevel += 0.2f;
 
         GetComponent<PlayerMovement>().setSpeed(speedLevel);
         TilesManager.setDifficult(difficultLevel);
