@@ -76,7 +76,7 @@ public class TilesManager : MonoBehaviour
             while (randomIndex == lastPrefabsIndex)
             {
                 difficultRange = titlePrefabs.Length > difficultLevel ? difficultLevel : titlePrefabs.Length;
-                randomIndex = Random.Range(0, titlePrefabs.Length);
+                randomIndex = Random.Range(1, titlePrefabs.Length);
             }
 
             lastPrefabsIndex = randomIndex;

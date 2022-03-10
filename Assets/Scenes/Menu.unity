@@ -454,7 +454,7 @@ RectTransform:
   m_GameObject: {fileID: 473746845}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.10530972, y: 0.18259162, z: 0.21061943}
+  m_LocalScale: {x: 0.10530972, y: 0.28313607, z: 0.21061943}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1408051011}
@@ -462,7 +462,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -30.381193, y: -20.830994}
+  m_AnchoredPosition: {x: -30.381226, y: -37.823814}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &473746847
@@ -840,7 +840,7 @@ RectTransform:
   m_GameObject: {fileID: 1024578073}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.10530972, y: 0.18259162, z: 0.21061943}
+  m_LocalScale: {x: 0.10530972, y: 0.28313607, z: 0.21061943}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 579352900}
@@ -849,7 +849,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -25.11, y: -6.2}
+  m_AnchoredPosition: {x: -25.110016, y: -9.614038}
   m_SizeDelta: {x: 300, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1024578076
@@ -1026,7 +1026,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 400, y: -30}
+  m_AnchoredPosition: {x: -298, y: -157}
   m_SizeDelta: {x: 68.7798, y: 23.0659}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1358755453
@@ -1154,7 +1154,7 @@ RectTransform:
   m_GameObject: {fileID: 1408051010}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 9.4958, y: 5.4767027, z: 4.7479}
+  m_LocalScale: {x: 9.4958, y: 3.5318708, z: 4.7479}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 473746846}
