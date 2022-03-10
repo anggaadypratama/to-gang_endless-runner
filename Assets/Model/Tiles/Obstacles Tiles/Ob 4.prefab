@@ -1,5 +1,102 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &966112099571645918
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9178423238858868976}
+  - component: {fileID: 2447312874195718586}
+  - component: {fileID: 5028871371766115231}
+  - component: {fileID: 4824240591544245351}
+  m_Layer: 0
+  m_Name: e
+  m_TagString: ObstaclesCollision
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9178423238858868976
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966112099571645918}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.802, y: -0, z: 0.776}
+  m_LocalScale: {x: 0.1, y: 1.1147, z: 1.577}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6388988854556859457}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &2447312874195718586
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966112099571645918}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &5028871371766115231
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966112099571645918}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4824240591544245351
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966112099571645918}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5444168316376983528
 GameObject:
   m_ObjectHideFlags: 0
@@ -49,7 +146,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 131552, guid: a7da3952b70b9f9498f9b69bb760cd0a, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesCollision
       objectReference: {fileID: 0}
     - target: {fileID: 465782, guid: a7da3952b70b9f9498f9b69bb760cd0a, type: 3}
       propertyPath: m_RootOrder
@@ -173,27 +270,27 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 478178707080469735, guid: 11dfe0906cba446b78325dfd31070111, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesCollision
       objectReference: {fileID: 0}
     - target: {fileID: 478178707347145386, guid: 11dfe0906cba446b78325dfd31070111, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesCollision
       objectReference: {fileID: 0}
     - target: {fileID: 478178707449169649, guid: 11dfe0906cba446b78325dfd31070111, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesCollision
       objectReference: {fileID: 0}
     - target: {fileID: 478178708147780893, guid: 11dfe0906cba446b78325dfd31070111, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesCollision
       objectReference: {fileID: 0}
     - target: {fileID: 808754663783291169, guid: 11dfe0906cba446b78325dfd31070111, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesCollision
       objectReference: {fileID: 0}
     - target: {fileID: 4429288202684098593, guid: 11dfe0906cba446b78325dfd31070111, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesCollision
       objectReference: {fileID: 0}
     - target: {fileID: 4862577855756614804, guid: 11dfe0906cba446b78325dfd31070111, type: 3}
       propertyPath: m_Name
@@ -201,7 +298,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7151671025504707075, guid: 11dfe0906cba446b78325dfd31070111, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesCollision
       objectReference: {fileID: 0}
     - target: {fileID: 7248752282813009058, guid: 11dfe0906cba446b78325dfd31070111, type: 3}
       propertyPath: m_RootOrder
@@ -249,11 +346,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7288782392394674210, guid: 11dfe0906cba446b78325dfd31070111, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesCollision
       objectReference: {fileID: 0}
     - target: {fileID: 7573570936496996340, guid: 11dfe0906cba446b78325dfd31070111, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesCollision
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11dfe0906cba446b78325dfd31070111, type: 3}
@@ -315,15 +412,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5250917851402973110, guid: e115730da7cef4f9fa03a4608b538df2, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesCollision
       objectReference: {fileID: 0}
     - target: {fileID: 5250917851815865085, guid: e115730da7cef4f9fa03a4608b538df2, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesCollision
       objectReference: {fileID: 0}
     - target: {fileID: 5250917852099830103, guid: e115730da7cef4f9fa03a4608b538df2, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesCollision
       objectReference: {fileID: 0}
     - target: {fileID: 8807289104871088676, guid: e115730da7cef4f9fa03a4608b538df2, type: 3}
       propertyPath: m_Name
@@ -345,7 +442,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3435903211412658768, guid: 45e812c10f79f4211af14c3b291ab4c7, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 7082061991496692320, guid: 45e812c10f79f4211af14c3b291ab4c7, type: 3}
       propertyPath: m_Name
@@ -400,5 +497,10 @@ PrefabInstance:
 --- !u!4 &605828250666974193 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9181904861930310778, guid: 45e812c10f79f4211af14c3b291ab4c7, type: 3}
+  m_PrefabInstance: {fileID: 8576252576179124107}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6388988854556859457 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3435903211413040074, guid: 45e812c10f79f4211af14c3b291ab4c7, type: 3}
   m_PrefabInstance: {fileID: 8576252576179124107}
   m_PrefabAsset: {fileID: 0}
