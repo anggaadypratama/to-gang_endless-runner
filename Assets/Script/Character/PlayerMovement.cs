@@ -32,8 +32,11 @@ public class PlayerMovement : MonoBehaviour
 
         if (isDeath)
         {
+            Invoke("StopGame", 1f);
+            Invoke("StopGame", 2f);
 
-            return;
+            enabled = false;
+
         }
 
         if (isMove())
@@ -53,16 +56,11 @@ public class PlayerMovement : MonoBehaviour
 
             if (horizontalMovement != 0)
             {
-                if (horizontalMovement < 0 && transform.rotation.y >= -45f)
-                {
-                    transform.Rotate(0.0f, -2f, 0.0f, Space.Self);
-                }
+                Vector3 currentRotation = transform.rotation.eulerAngles;
+                currentRotation.y = 20 * horizontalMovement;
 
-                if (horizontalMovement > 0 && transform.rotation.y <= 45f)
-                {
-                    transform.Rotate(0.0f, 2f, 0.0f, Space.Self);
-
-                }
+                currentRotation.y = Mathf.Clamp(currentRotation.y, -20f, 20f);
+                transform.rotation = Quaternion.Euler(currentRotation);
             }
             else
             {
@@ -71,7 +69,7 @@ public class PlayerMovement : MonoBehaviour
 
             moveVector.x = horizontalMovement * 2;
             moveVector.y = verticalVelocity;
-            moveVector.z = speed;
+            moveVector.z = !isDeath ? speed : 0;
 
             controller.Move(moveVector * Time.deltaTime * speed);
         }
@@ -115,18 +113,22 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
-
-        if (hit.gameObject.tag == "Enemy")
-        {
-            Debug.Log("Enemy hitted");
-            Death();
-        }
+        if (hit.gameObject.tag == "ObstaclesCollision") Death("Crashing");
+        if (hit.gameObject.tag == "ObstaclesStole") Death("Timney");
     }
 
-    void Death()
+    void StopGame()
     {
+        enabled = false;
         animator.enabled = false;
+    }
+
+
+    void Death(string animationTrigger)
+    {
+        animator.SetTrigger(animationTrigger);
         isDeath = true;
         GetComponent<Score>().OnDeath();
+
     }
 }

@@ -92,47 +92,47 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1680915231256255402, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1680943677350588000, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1680960795576151234, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1680961824846492974, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1680996918311243020, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1681043621710807734, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1681053233199409656, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1681155472068589888, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1681227639088985666, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1681272335729222776, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1681317166664809872, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1681338238206789606, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_Name
@@ -144,27 +144,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1681397551131141300, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1681483559769736520, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1681520675794129556, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1681590170030928696, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1681623433779977504, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1681650650189921252, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
@@ -296,47 +296,47 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1680915231256255402, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1680943677350588000, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1680960795576151234, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1680961824846492974, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1680996918311243020, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1681043621710807734, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1681053233199409656, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1681155472068589888, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1681227639088985666, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1681272335729222776, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1681317166664809872, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1681338238206789606, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_Name
@@ -344,27 +344,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1681397551131141300, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1681483559769736520, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1681520675794129556, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1681590170030928696, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1681623433779977504, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1681650650189921252, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
@@ -386,47 +386,47 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2842740699568868668, guid: 385071ab94a314048ab0a913d3c759ab, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesCollision
       objectReference: {fileID: 0}
     - target: {fileID: 3933915159470778356, guid: 385071ab94a314048ab0a913d3c759ab, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesCollision
       objectReference: {fileID: 0}
     - target: {fileID: 4461166247738268343, guid: 385071ab94a314048ab0a913d3c759ab, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesCollision
       objectReference: {fileID: 0}
     - target: {fileID: 4728296393831246459, guid: 385071ab94a314048ab0a913d3c759ab, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesCollision
       objectReference: {fileID: 0}
     - target: {fileID: 4936839258101529908, guid: 385071ab94a314048ab0a913d3c759ab, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesCollision
       objectReference: {fileID: 0}
     - target: {fileID: 5208580891047320677, guid: 385071ab94a314048ab0a913d3c759ab, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesCollision
       objectReference: {fileID: 0}
     - target: {fileID: 5441151224528476748, guid: 385071ab94a314048ab0a913d3c759ab, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesCollision
       objectReference: {fileID: 0}
     - target: {fileID: 6003868515336608796, guid: 385071ab94a314048ab0a913d3c759ab, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesCollision
       objectReference: {fileID: 0}
     - target: {fileID: 6722567683080252277, guid: 385071ab94a314048ab0a913d3c759ab, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesCollision
       objectReference: {fileID: 0}
     - target: {fileID: 7958395761802361713, guid: 385071ab94a314048ab0a913d3c759ab, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesCollision
       objectReference: {fileID: 0}
     - target: {fileID: 8059409727846152029, guid: 385071ab94a314048ab0a913d3c759ab, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesCollision
       objectReference: {fileID: 0}
     - target: {fileID: 8088229636208782068, guid: 385071ab94a314048ab0a913d3c759ab, type: 3}
       propertyPath: m_RootOrder
@@ -474,11 +474,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8447103849105853539, guid: 385071ab94a314048ab0a913d3c759ab, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesCollision
       objectReference: {fileID: 0}
     - target: {fileID: 8811423429653145388, guid: 385071ab94a314048ab0a913d3c759ab, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesCollision
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 385071ab94a314048ab0a913d3c759ab, type: 3}
@@ -540,47 +540,47 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1680915231256255402, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1680943677350588000, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1680960795576151234, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1680961824846492974, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1680996918311243020, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1681043621710807734, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1681053233199409656, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1681155472068589888, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1681227639088985666, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1681272335729222776, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1681317166664809872, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1681338238206789606, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_Name
@@ -592,27 +592,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1681397551131141300, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1681483559769736520, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1681520675794129556, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1681590170030928696, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1681623433779977504, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     - target: {fileID: 1681650650189921252, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesStole
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a0713066411d4f9c9b3fd87091bed84, type: 3}
@@ -634,7 +634,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 131552, guid: a7da3952b70b9f9498f9b69bb760cd0a, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: Obstacles
       objectReference: {fileID: 0}
     - target: {fileID: 465782, guid: a7da3952b70b9f9498f9b69bb760cd0a, type: 3}
       propertyPath: m_RootOrder
@@ -708,7 +708,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1162154899334884, guid: 11d58a431e630ce4d81600c43d8b7537, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesCollision
       objectReference: {fileID: 0}
     - target: {fileID: 4545007480460092, guid: 11d58a431e630ce4d81600c43d8b7537, type: 3}
       propertyPath: m_RootOrder
@@ -769,7 +769,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1162154899334884, guid: 11d58a431e630ce4d81600c43d8b7537, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesCollision
       objectReference: {fileID: 0}
     - target: {fileID: 4545007480460092, guid: 11d58a431e630ce4d81600c43d8b7537, type: 3}
       propertyPath: m_RootOrder
@@ -830,7 +830,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 131552, guid: a7da3952b70b9f9498f9b69bb760cd0a, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: Obstacles
       objectReference: {fileID: 0}
     - target: {fileID: 465782, guid: a7da3952b70b9f9498f9b69bb760cd0a, type: 3}
       propertyPath: m_RootOrder
@@ -896,47 +896,47 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2842740699568868668, guid: 385071ab94a314048ab0a913d3c759ab, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesCollision
       objectReference: {fileID: 0}
     - target: {fileID: 3933915159470778356, guid: 385071ab94a314048ab0a913d3c759ab, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesCollision
       objectReference: {fileID: 0}
     - target: {fileID: 4461166247738268343, guid: 385071ab94a314048ab0a913d3c759ab, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesCollision
       objectReference: {fileID: 0}
     - target: {fileID: 4728296393831246459, guid: 385071ab94a314048ab0a913d3c759ab, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesCollision
       objectReference: {fileID: 0}
     - target: {fileID: 4936839258101529908, guid: 385071ab94a314048ab0a913d3c759ab, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesCollision
       objectReference: {fileID: 0}
     - target: {fileID: 5208580891047320677, guid: 385071ab94a314048ab0a913d3c759ab, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesCollision
       objectReference: {fileID: 0}
     - target: {fileID: 5441151224528476748, guid: 385071ab94a314048ab0a913d3c759ab, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesCollision
       objectReference: {fileID: 0}
     - target: {fileID: 6003868515336608796, guid: 385071ab94a314048ab0a913d3c759ab, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesCollision
       objectReference: {fileID: 0}
     - target: {fileID: 6722567683080252277, guid: 385071ab94a314048ab0a913d3c759ab, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesCollision
       objectReference: {fileID: 0}
     - target: {fileID: 7958395761802361713, guid: 385071ab94a314048ab0a913d3c759ab, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesCollision
       objectReference: {fileID: 0}
     - target: {fileID: 8059409727846152029, guid: 385071ab94a314048ab0a913d3c759ab, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesCollision
       objectReference: {fileID: 0}
     - target: {fileID: 8088229636208782068, guid: 385071ab94a314048ab0a913d3c759ab, type: 3}
       propertyPath: m_RootOrder
@@ -984,11 +984,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8447103849105853539, guid: 385071ab94a314048ab0a913d3c759ab, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesCollision
       objectReference: {fileID: 0}
     - target: {fileID: 8811423429653145388, guid: 385071ab94a314048ab0a913d3c759ab, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: ObstaclesCollision
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 385071ab94a314048ab0a913d3c759ab, type: 3}

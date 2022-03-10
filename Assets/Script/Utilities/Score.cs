@@ -15,8 +15,6 @@ public class Score : MonoBehaviour
     bool isDeath = false;
     public DeathMenu deathMenu;
 
-
-
     void Update()
     {
 
@@ -28,7 +26,6 @@ public class Score : MonoBehaviour
         if (isMove)
         {
             scoreText.gameObject.SetActive(false);
-
         }
         else
         {
@@ -54,6 +51,11 @@ public class Score : MonoBehaviour
     public void OnDeath()
     {
         isDeath = true;
-        deathMenu.ToogleEndMenu(score);
+        float prevHighscore = PlayerPrefs.GetFloat("Score");
+        PlayerPrefs.SetFloat("Score", prevHighscore > score ? prevHighscore : score);
+        Invoke("DeathMenu", 2f);
     }
+
+
+    void DeathMenu() => deathMenu.ToogleEndMenu(score);
 }
