@@ -14,7 +14,8 @@ public class CoinsAttractor : MonoBehaviour
                 20 * Time.deltaTime
             );
 
-            GetComponent<Renderer>().material.color = new Color(0f, 0f, 0f, 0f);
+            CoinsCounts.setCoins(1);
+
             Invoke("isObjectActive", .1f);
 
             Invoke("RemoveObject", 1f);
