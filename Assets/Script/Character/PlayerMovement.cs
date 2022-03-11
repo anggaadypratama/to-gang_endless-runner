@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     Quaternion originalRotation;
 
     float gravity = 1f;
-    float speed = 3.0f;
+    public float speed = 3.0f;
     float verticalVelocity = 0f;
     Animator animator;
     float animationDuration = 3f;
@@ -32,7 +32,6 @@ public class PlayerMovement : MonoBehaviour
 
         if (isDeath)
         {
-            Invoke("StopGame", 1f);
             Invoke("StopGame", 2f);
 
             enabled = false;
@@ -66,6 +65,8 @@ public class PlayerMovement : MonoBehaviour
             {
                 transform.rotation = Quaternion.Slerp(transform.rotation, originalRotation, Time.time * 10);
             }
+
+
 
             moveVector.x = horizontalMovement * 2;
             moveVector.y = verticalVelocity;
