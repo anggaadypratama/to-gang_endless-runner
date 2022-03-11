@@ -13,8 +13,8 @@ public class CoinsCounts : MonoBehaviour
         coinsCount.text = $"Coins : {(int)coinsScore}";
     }
 
-    public static void setCoins(float coins)
+    public static void setCoins(float coin)
     {
-        coinsScore += coins;
+        coinsScore += coin;
     }
 }

@@ -67,7 +67,7 @@ public class PlayerMovement : MonoBehaviour
                 transform.rotation = Quaternion.Slerp(transform.rotation, originalRotation, Time.time * 10);
             }
 
-            CoinsAttractor.setSpeed(speed);
+
 
             moveVector.x = horizontalMovement * 2;
             moveVector.y = verticalVelocity;

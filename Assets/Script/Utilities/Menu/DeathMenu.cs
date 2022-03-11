@@ -28,12 +28,12 @@ public class DeathMenu : MonoBehaviour
 
     public void Restart()
     {
-        Debug.Log("restart clicked");
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     public void ToMenu()
     {
-        Debug.Log("menu clicked");
+
 
         SceneManager.LoadScene("Menu");
     }
