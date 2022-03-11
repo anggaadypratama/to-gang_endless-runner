@@ -11,12 +11,16 @@ public class DeathMenu : MonoBehaviour
     public Image buttonMenu;
     public Image buttonPlayAgain;
 
+
     void Start() => gameObject.SetActive(false);
 
     public void ToogleEndMenu(float score)
     {
+
+        float prevHighscore = PlayerPrefs.GetFloat("Score");
+        PlayerPrefs.SetFloat("Score", prevHighscore > score ? prevHighscore : score);
         gameObject.SetActive(true);
-        scoreText.text = $"{(int)score}m";
+        scoreText.text = $"{(int)score}pt";
     }
 
     public void OnEnterImageMenu() => buttonMenu.color = new Color(166, 0, 0, 239);
@@ -28,13 +32,10 @@ public class DeathMenu : MonoBehaviour
 
     public void Restart()
     {
-
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     public void ToMenu()
     {
-
-
         SceneManager.LoadScene("Menu");
     }
 

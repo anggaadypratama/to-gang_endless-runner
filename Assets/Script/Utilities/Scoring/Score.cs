@@ -1,5 +1,6 @@
 
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 
@@ -14,6 +15,7 @@ public class Score : MonoBehaviour
 
     bool isDeath = false;
     public DeathMenu deathMenu;
+    public Image gameInfo;
 
     void Update()
     {
@@ -51,11 +53,14 @@ public class Score : MonoBehaviour
     public void OnDeath()
     {
         isDeath = true;
-        float prevHighscore = PlayerPrefs.GetFloat("Score");
-        PlayerPrefs.SetFloat("Score", prevHighscore > score ? prevHighscore : score);
         Invoke("DeathMenu", 2f);
+        gameInfo.enabled = false;
     }
 
 
-    void DeathMenu() => deathMenu.ToogleEndMenu(score);
+    void DeathMenu()
+    {
+        float coin = CoinsCounts.getCoins();
+        deathMenu.ToogleEndMenu(coin == 0 ? 1 * score : score * coin);
+    }
 }

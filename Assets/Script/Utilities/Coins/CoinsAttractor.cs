@@ -29,27 +29,28 @@ public class CoinsAttractor : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(coinsValue);
         if (other.CompareTag("Player")) CoinsCounts.setCoins(coinsValue);
     }
 
-    public static IEnumerator AttractAllCoins()
+    public void AttractCoins()
     {
         GameObject[] coins = GameObject.FindGameObjectsWithTag("Coin");
+
+        Debug.Log("Attract Started");
         foreach (GameObject obst in coins)
-            obst.GetComponent<SphereCollider>().radius = 8f;
-        yield return new WaitForSeconds(3f);
+            obst.GetComponent<SphereCollider>().radius = 12f;
+    }
+
+    public IEnumerator DisableAttractCoins()
+    {
+        yield return new WaitForSeconds(3);
+
+        Debug.Log("Attract Disabled");
+        GameObject[] coins = GameObject.FindGameObjectsWithTag("Coin");
         foreach (GameObject obst in coins)
             obst.GetComponent<SphereCollider>().radius = 1f;
     }
 
-    public static IEnumerator DoubleCoins()
-    {
-        coinsValue = 2f;
-        yield return new WaitForSeconds(5f);
-        coinsValue = 1f;
-        yield return false;
-    }
 
     void isObjectActive() => gameObject.SetActive(false);
 

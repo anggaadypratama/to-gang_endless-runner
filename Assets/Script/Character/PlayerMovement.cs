@@ -32,7 +32,6 @@ public class PlayerMovement : MonoBehaviour
 
         if (isDeath)
         {
-            Invoke("StopGame", 1f);
             Invoke("StopGame", 2f);
 
             enabled = false;

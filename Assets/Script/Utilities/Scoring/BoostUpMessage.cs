@@ -21,4 +21,10 @@ public class BoostUpMessage : MonoBehaviour
     {
         boostMessage.text = message;
     }
+
+    public static void isActive(bool status = false)
+    {
+        boostMessage.enabled = status;
+        Debug.Log(boostMessage.enabled);
+    }
 }
