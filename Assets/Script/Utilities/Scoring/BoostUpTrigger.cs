@@ -36,7 +36,7 @@ public class BoostUpTrigger : MonoBehaviour
     //     yield return null;
     // }
 
-    float BoostDuration(float seconds) => seconds != 0 ? seconds - Time.deltaTime : 0;
+    // float BoostDuration(float seconds) => seconds != 0 ? seconds - Time.deltaTime : 0;
 
     void isObjectActive() => gameObject.SetActive(false);
 
