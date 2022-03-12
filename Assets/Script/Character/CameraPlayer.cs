@@ -12,11 +12,15 @@ public class CameraPlayer : MonoBehaviour
     float transition = 0f;
     Vector3 animationOffset = new Vector3(0, 5, 5);
 
+    public static AudioSource bgfx;
+
 
     void Start()
     {
         lookAt = GameObject.FindGameObjectWithTag("Player").transform;
         startOffset = transform.position - lookAt.position;
+
+        bgfx = GetComponent<AudioSource>();
 
     }
 
@@ -38,4 +42,7 @@ public class CameraPlayer : MonoBehaviour
             transform.LookAt(lookAt.position + Vector3.up);
         }
     }
+
+    public static void StopBgFX() => bgfx.Stop();
+
 }

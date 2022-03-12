@@ -9,6 +9,7 @@ TagManager:
   - Obstacles
   - Enemy
   - Coin
+  - BoostCoin
   layers:
   - Default
   - TransparentFX

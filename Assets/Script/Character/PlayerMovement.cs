@@ -8,6 +8,8 @@ public class PlayerMovement : MonoBehaviour
     Vector3 moveVector = Vector3.zero;
     Quaternion originalRotation;
 
+    public AudioSource[] DeathSFX;
+
     float gravity = 1f;
     public float speed = 3.0f;
     float verticalVelocity = 0f;
@@ -52,7 +54,6 @@ public class PlayerMovement : MonoBehaviour
 
             float horizontalMovement = Input.GetAxisRaw("Horizontal");
 
-
             if (horizontalMovement != 0)
             {
                 Vector3 currentRotation = transform.rotation.eulerAngles;
@@ -65,8 +66,6 @@ public class PlayerMovement : MonoBehaviour
             {
                 transform.rotation = Quaternion.Slerp(transform.rotation, originalRotation, Time.time * 10);
             }
-
-
 
             moveVector.x = horizontalMovement * 2;
             moveVector.y = verticalVelocity;
@@ -114,8 +113,18 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        if (hit.gameObject.tag == "ObstaclesCollision") Death("Crashing");
-        if (hit.gameObject.tag == "ObstaclesStole") Death("Timney");
+        if (hit.gameObject.tag == "ObstaclesCollision")
+        {
+            CameraPlayer.StopBgFX();
+            DeathSFX[0].Play();
+            Death("Crashing");
+        }
+        if (hit.gameObject.tag == "ObstaclesStole")
+        {
+            CameraPlayer.StopBgFX();
+            DeathSFX[1].Play();
+            Death("Timney");
+        }
     }
 
     void StopGame()
@@ -123,7 +132,6 @@ public class PlayerMovement : MonoBehaviour
         enabled = false;
         animator.enabled = false;
     }
-
 
     void Death(string animationTrigger)
     {

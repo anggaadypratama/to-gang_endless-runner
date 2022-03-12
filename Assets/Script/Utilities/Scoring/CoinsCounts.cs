@@ -13,7 +13,13 @@ public class CoinsCounts : MonoBehaviour
 
     public static void setCoins(float coin)
     {
+        Debug.Log(coin);
         coinsScore += coin;
+    }
+
+    public static void removeCoins()
+    {
+        coinsScore = 0;
     }
 
     public static float getCoins() => coinsScore;

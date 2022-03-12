@@ -8,9 +8,12 @@ public class CoinsAttractor : MonoBehaviour
     public static float coinsValue = 1f;
     public static SphereCollider attractCoinArea;
 
+    public AudioSource audioFX;
+
     private void Start()
     {
         attractCoinArea = GetComponent<SphereCollider>();
+
     }
     private void OnTriggerStay(Collider other)
     {
@@ -22,6 +25,7 @@ public class CoinsAttractor : MonoBehaviour
                 20 * Time.deltaTime
             );
 
+
             Invoke("isObjectActive", .1f);
             Invoke("RemoveObject", 1f);
         }
@@ -29,7 +33,11 @@ public class CoinsAttractor : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player")) CoinsCounts.setCoins(coinsValue);
+        if (other.CompareTag("Player"))
+        {
+            CoinsCounts.setCoins(coinsValue);
+            audioFX.Play();
+        }
     }
 
     public void AttractCoins()
@@ -38,7 +46,7 @@ public class CoinsAttractor : MonoBehaviour
 
         Debug.Log("Attract Started");
         foreach (GameObject obst in coins)
-            obst.GetComponent<SphereCollider>().radius = 12f;
+            obst.GetComponent<SphereCollider>().radius = 20f;
     }
 
     public IEnumerator DisableAttractCoins()
