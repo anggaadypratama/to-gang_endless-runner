@@ -33,6 +33,7 @@ public class DeathMenu : MonoBehaviour
     public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        CoinsCounts.removeCoins();
     }
     public void ToMenu()
     {

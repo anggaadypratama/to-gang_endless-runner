@@ -3,7 +3,8 @@ using UnityEngine;
 
 public class BoostUpTrigger : MonoBehaviour
 {
-    float duration = 5f;
+    public AudioSource audioFX;
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -16,6 +17,7 @@ public class BoostUpTrigger : MonoBehaviour
             );
             // StartCoroutine(Message());
 
+            audioFX.Play();
 
 
             CoinsAttractor coin = gameObject.AddComponent<CoinsAttractor>();

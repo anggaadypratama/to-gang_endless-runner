@@ -98,6 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d524f1321b34439fa0228a063e9dcc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioFX: {fileID: 6719188718453894202, guid: 4596555cccf0b4715b3d7899fa89eb17, type: 3}
 --- !u!114 &7541876409357137464
 MonoBehaviour:
   m_ObjectHideFlags: 0

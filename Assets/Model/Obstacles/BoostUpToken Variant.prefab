@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BoostUpToken Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 249362037630654933, guid: 0ec9aa443e6884d6cac3c4ff286ce689, type: 3}
+      propertyPath: m_TagString
+      value: BoostCoin
+      objectReference: {fileID: 0}
     - target: {fileID: 2162250025848631452, guid: 0ec9aa443e6884d6cac3c4ff286ce689, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -95,3 +99,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e05af47072f4b0b81eb54956b18f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioFX: {fileID: 8047987277991215373, guid: ebb59fce9ba744fa3941c041cb876647, type: 3}
